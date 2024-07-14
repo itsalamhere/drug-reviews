@@ -1,10 +1,19 @@
 # drug-reviews
 
-# Customer Reviews on Drugs Purchasing and Satisfaction
+# Dashboard of Drug Reviews and Sentiment Prediction
 
 Data science applications in healthcare can offer us a good amount of interesting insights to the stakeholders. Aside from more-advanced applications to health workers to such as predictive analytics, medical imaging, and drug research, data such as customers' sales and reviews in healthcare products can also be used by pharma and medical device companies in evaluating their market or product.
 
-In this project, we'll be exploring the dataset of from Ahmed et al., (2023). The dataset contains 392510 unique reviews along with the name of the drug, user rating, the credibility of the review in the form of likes, length of the reviews, the condition for which the drug was taken and how long the drug was taken for.
+The data has been collected from [drugs.com](drugs.com) and stored in a single CSV file by [Ahmed et al., (2023)](https://data.mendeley.com/datasets/64cc5w5dxy/1) . The dataset contains 392510 unique reviews along with:
+- `MedicineName` -- the name of the drug,
+- `MedicineFor` -- the condition for which the drug was taken,
+- `ReviewDate` -- when the review's posted,
+- `UserName` -- who posted the review,
+- `IntakeTime` -- how long the drug was taken for,
+- `Reviews` -- how the user perceives the drug,
+- `ReviewLength` -- how many characters are in the reviews,
+- `Rating` -- score by the user, scaled from `1-10`,
+- `NumberOfLikes` -- the credibility of the review in the form of likes. 
 
 The project will be divided into 4 main sections:
 1. `01-EDA-and-data-cleaning`, where we'll be cleaning the data for future purposes of sentiment prediction and dashboard
